@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section></section>
+    <div class="container">
+        <h1>Scroll Up to see Backgroun Picture</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel consequuntur itaque et veniam repellat
+            delectus dicta laudantium aliquam illum maxime, laborum tempore ex amet, atque labore pariatur perspiciatis
+            dolorem cumque provident, voluptas corporis iusto adipisci doloribus? Ipsam facilis modi commodi libero
+            blanditiis quam voluptas. Ut ullam laboriosam exercitationem molestias voluptatem praesentium odio maiores.
+            Exercitationem quod perspiciatis provident quisquam tempora eaque accusantium, possimus ad! Accusantium
+            recusandae provident distinctio repellat, tenetur ipsum ullam quibusdam molestiae similique voluptatum
+            neque natus doloremque dolor, cum, repellendus adipisci? Quas, quae voluptas quod ut atque inventore
+            accusamus architecto beatae id molestiae deserunt nihil suscipit, ad at, qui ipsum temporibus neque
+            commodi! Saepe a veritatis soluta odit tenetur quae fuga modi non doloremque harum. Officiis, magnam quo!
+            Odio provident illum vitae sapiente quisquam voluptate in alias quam facere voluptates libero accusamus
+            fugiat quibusdam consequatur deleniti quis, voluptas nulla! Laudantium, tenetur ipsam eum asperiores
+            explicabo a reiciendis quasi voluptatibus sit nihil accusamus aperiam excepturi sed dolorem itaque beatae
+            dolores necessitatibus dolorum perspiciatis corrupti veniam id. Deleniti, assumenda id maiores magni
+            voluptatum cum mollitia fugiat eaque vero soluta vitae exercitationem. Eius, recusandae similique ex nihil
+            rerum et! Fugiat adipisci, perspiciatis aperiam culpa nihil at deserunt aliquam tenetur cum mollitia
+            facilis?</p>
+    </div>
+    <script>
+        window.addEventListener('scroll', () => {
+            const scroll_pos = window.scrollY / 2;
+            console.log(scroll_pos)
+            document.querySelector('section').style = `background-position-x: ${-scroll_pos}px`
+        })
+    </script>
+</body>
+
+</html>
